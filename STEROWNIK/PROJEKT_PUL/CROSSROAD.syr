@@ -1,0 +1,548 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: CROSSROAD.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CROSSROAD.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CROSSROAD"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : CROSSROAD
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.vhd" in Library work.
+Entity <crossroad> compiled.
+Entity <crossroad> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <CROSSROAD> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <CROSSROAD> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.vhd" line 117: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <dzien>, <cnt4>
+Entity <CROSSROAD> analyzed. Unit <CROSSROAD> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CROSSROAD>.
+    Related source file is "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.vhd".
+    Found finite state machine <FSM_0> for signal <STAN>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 24                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | off                                            |
+    | Power Up State     | stan1                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16x7-bit ROM for signal <seg$mux0001> created at line 84.
+WARNING:Xst:737 - Found 4-bit latch for signal <anodes>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 7-bit register for signal <seg>.
+    Found 1-of-4 decoder for signal <anodes$mux0000>.
+    Found 17-bit up counter for signal <clk_div1ms>.
+    Found 27-bit up counter for signal <clk_div2s>.
+    Found 27-bit comparator greatequal for signal <clk_div2s$cmp_ge0000> created at line 429.
+    Found 31-bit up counter for signal <clk_div30s>.
+    Found 31-bit comparator greatequal for signal <clk_div30s$cmp_ge0000> created at line 406.
+    Found 3-bit up counter for signal <cnt1>.
+    Found 4-bit up counter for signal <cnt2>.
+    Found 2-bit up counter for signal <cnt3>.
+    Found 1-bit register for signal <cnt4>.
+    Found 3-bit register for signal <daylight>.
+    Found 3-bit adder for signal <daylight$addsub0000> created at line 415.
+    Found 3-bit comparator greatequal for signal <daylight$cmp_ge0000> created at line 408.
+    Found 3-bit comparator greatequal for signal <daylight$cmp_ge0001> created at line 410.
+    Found 4-bit 4-to-1 multiplexer for signal <digit>.
+    Found 1-bit register for signal <dzien>.
+    Found 3-bit comparator less for signal <dzien$cmp_lt0000> created at line 410.
+    Found 3-bit comparator less for signal <dzien$cmp_lt0001> created at line 408.
+    Found 31-bit comparator less for signal <dzien$cmp_lt0002> created at line 406.
+    Found 2-bit up counter for signal <sel>.
+    Found 4-bit comparator greatequal for signal <STAN$cmp_ge0000> created at line 156.
+    Found 2-bit comparator greatequal for signal <STAN$cmp_ge0001> created at line 194.
+    Found 3-bit comparator greatequal for signal <test$cmp_ge0000> created at line 149.
+    Found 3-bit comparator greatequal for signal <test$cmp_ge0001> created at line 144.
+    Found 3-bit comparator greatequal for signal <test$cmp_ge0002> created at line 139.
+    Found 3-bit comparator greatequal for signal <test$cmp_ge0003> created at line 134.
+    Found 3-bit comparator greatequal for signal <test$cmp_ge0004> created at line 129.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred   7 Counter(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  14 Comparator(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <CROSSROAD> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 3-bit adder                                           : 1
+# Counters                                             : 7
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 2
+ 27-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 31-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 4
+ 1-bit register                                        : 2
+ 3-bit register                                        : 1
+ 7-bit register                                        : 1
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 14
+ 2-bit comparator greatequal                           : 1
+ 27-bit comparator greatequal                          : 1
+ 3-bit comparator greatequal                           : 7
+ 3-bit comparator less                                 : 2
+ 31-bit comparator greatequal                          : 1
+ 31-bit comparator less                                : 1
+ 4-bit comparator greatequal                           : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <STAN/FSM> on signal <STAN[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ stan1 | 000
+ stan2 | 010
+ stan3 | 110
+ stan4 | 111
+ stan5 | 101
+ stan6 | 100
+ noc   | 011
+ off   | 001
+-------------------
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <0>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <1>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <2>.
+WARNING:Xst:1294 - Latch <0> is equivalent to a wire in block <3>.
+
+Synthesizing (advanced) Unit <CROSSROAD>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_seg_mux0001> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <CROSSROAD> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 3-bit adder                                           : 1
+# Counters                                             : 7
+ 17-bit up counter                                     : 1
+ 2-bit up counter                                      : 2
+ 27-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 31-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+# Latches                                              : 1
+ 4-bit latch                                           : 1
+# Comparators                                          : 14
+ 2-bit comparator greatequal                           : 1
+ 27-bit comparator greatequal                          : 1
+ 3-bit comparator greatequal                           : 7
+ 3-bit comparator less                                 : 2
+ 31-bit comparator greatequal                          : 1
+ 31-bit comparator less                                : 1
+ 4-bit comparator greatequal                           : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1294 - Latch <anodes_0> is equivalent to a wire in block <CROSSROAD>.
+WARNING:Xst:1294 - Latch <anodes_1> is equivalent to a wire in block <CROSSROAD>.
+WARNING:Xst:1294 - Latch <anodes_2> is equivalent to a wire in block <CROSSROAD>.
+WARNING:Xst:1294 - Latch <anodes_3> is equivalent to a wire in block <CROSSROAD>.
+
+Optimizing unit <CROSSROAD> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CROSSROAD, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 101
+ Flip-Flops                                            : 101
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CROSSROAD.ngr
+Top Level Output File Name         : CROSSROAD
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 24
+
+Cell Usage :
+# BELS                             : 362
+#      GND                         : 1
+#      INV                         : 14
+#      LUT1                        : 8
+#      LUT2                        : 13
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 93
+#      LUT3_D                      : 1
+#      LUT3_L                      : 1
+#      LUT4                        : 49
+#      LUT4_L                      : 2
+#      MUXCY                       : 96
+#      MUXF5                       : 6
+#      VCC                         : 1
+#      XORCY                       : 75
+# FlipFlops/Latches                : 101
+#      FD                          : 4
+#      FDC                         : 77
+#      FDE                         : 16
+#      FDP                         : 1
+#      FDS                         : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 23
+#      IBUF                        : 1
+#      OBUF                        : 22
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       95  out of   4656     2%  
+ Number of Slice Flip Flops:            101  out of   9312     1%  
+ Number of 4 input LUTs:                183  out of   9312     1%  
+ Number of IOs:                          24
+ Number of bonded IOBs:                  24  out of    232    10%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 101   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 78    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.837ns (Maximum Frequency: 113.163MHz)
+   Minimum input arrival time before clock: 4.812ns
+   Maximum output required time after clock: 8.717ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.837ns (frequency: 113.163MHz)
+  Total number of paths / destination ports: 21791 / 120
+-------------------------------------------------------------------------
+Delay:               8.837ns (Levels of Logic = 47)
+  Source:            clk_div30s_8 (FF)
+  Destination:       clk_div30s_30 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clk_div30s_8 to clk_div30s_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.591   0.622  clk_div30s_8 (clk_div30s_8)
+     LUT4:I0->O            1   0.704   0.000  Mcompar_clk_div30s_cmp_ge0000_lut<0> (Mcompar_clk_div30s_cmp_ge0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_clk_div30s_cmp_ge0000_cy<0> (Mcompar_clk_div30s_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_div30s_cmp_ge0000_cy<1> (Mcompar_clk_div30s_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_div30s_cmp_ge0000_cy<2> (Mcompar_clk_div30s_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_div30s_cmp_ge0000_cy<3> (Mcompar_clk_div30s_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_div30s_cmp_ge0000_cy<4> (Mcompar_clk_div30s_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_div30s_cmp_ge0000_cy<5> (Mcompar_clk_div30s_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_div30s_cmp_ge0000_cy<6> (Mcompar_clk_div30s_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_div30s_cmp_ge0000_cy<7> (Mcompar_clk_div30s_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_div30s_cmp_ge0000_cy<8> (Mcompar_clk_div30s_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_div30s_cmp_ge0000_cy<9> (Mcompar_clk_div30s_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_div30s_cmp_ge0000_cy<10> (Mcompar_clk_div30s_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_div30s_cmp_ge0000_cy<11> (Mcompar_clk_div30s_cmp_ge0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_div30s_cmp_ge0000_cy<12> (Mcompar_clk_div30s_cmp_ge0000_cy<12>)
+     MUXCY:CI->O          34   0.459   1.298  Mcompar_clk_div30s_cmp_ge0000_cy<13> (clk_div30s_cmp_ge0000)
+     LUT3:I2->O            1   0.704   0.000  Mcount_clk_div30s_lut<0> (Mcount_clk_div30s_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Mcount_clk_div30s_cy<0> (Mcount_clk_div30s_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<1> (Mcount_clk_div30s_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<2> (Mcount_clk_div30s_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<3> (Mcount_clk_div30s_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<4> (Mcount_clk_div30s_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<5> (Mcount_clk_div30s_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<6> (Mcount_clk_div30s_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<7> (Mcount_clk_div30s_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<8> (Mcount_clk_div30s_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<9> (Mcount_clk_div30s_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<10> (Mcount_clk_div30s_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<11> (Mcount_clk_div30s_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<12> (Mcount_clk_div30s_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<13> (Mcount_clk_div30s_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<14> (Mcount_clk_div30s_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<15> (Mcount_clk_div30s_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<16> (Mcount_clk_div30s_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<17> (Mcount_clk_div30s_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<18> (Mcount_clk_div30s_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<19> (Mcount_clk_div30s_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<20> (Mcount_clk_div30s_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<21> (Mcount_clk_div30s_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<22> (Mcount_clk_div30s_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<23> (Mcount_clk_div30s_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<24> (Mcount_clk_div30s_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<25> (Mcount_clk_div30s_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<26> (Mcount_clk_div30s_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<27> (Mcount_clk_div30s_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_clk_div30s_cy<28> (Mcount_clk_div30s_cy<28>)
+     MUXCY:CI->O           0   0.059   0.000  Mcount_clk_div30s_cy<29> (Mcount_clk_div30s_cy<29>)
+     XORCY:CI->O           1   0.804   0.000  Mcount_clk_div30s_xor<30> (Mcount_clk_div30s30)
+     FDC:D                     0.308          clk_div30s_30
+    ----------------------------------------
+    Total                      8.837ns (6.917ns logic, 1.920ns route)
+                                       (78.3% logic, 21.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              4.812ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       cnt4 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to cnt4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            82   1.218   1.453  reset_IBUF (reset_IBUF)
+     LUT2:I0->O           10   0.704   0.882  cnt1_and00001 (cnt1_and0000)
+     FDE:CE                    0.555          cnt4
+    ----------------------------------------
+    Total                      4.812ns (2.477ns logic, 2.335ns route)
+                                       (51.5% logic, 48.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 144 / 20
+-------------------------------------------------------------------------
+Offset:              8.717ns (Levels of Logic = 4)
+  Source:            cnt1_0 (FF)
+  Destination:       dioda1<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: cnt1_0 to dioda1<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             15   0.591   1.192  cnt1_0 (cnt1_0)
+     LUT3:I0->O            3   0.704   0.706  dioda<1>31 (N19)
+     LUT4:I0->O            1   0.704   0.424  test1<1>70_SW0 (N54)
+     LUT4:I3->O            1   0.704   0.420  test1<1>70 (dioda1_1_OBUF)
+     OBUF:I->O                 3.272          dioda1_1_OBUF (dioda1<1>)
+    ----------------------------------------
+    Total                      8.717ns (5.975ns logic, 2.742ns route)
+                                       (68.5% logic, 31.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.13 secs
+ 
+--> 
+
+Total memory usage is 264820 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

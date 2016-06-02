@@ -1,0 +1,180 @@
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+xst -intstyle ise -ifn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.xst" -ofn "C:/Users/Student/212499/PROJEKT_PUL/CROSSROAD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CROSSROAD.ucf -p xc3s500e-fg320-4 CROSSROAD.ngc CROSSROAD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o CROSSROAD_map.ncd CROSSROAD.ngd CROSSROAD.pcf 
+par -w -intstyle ise -ol high -t 1 CROSSROAD_map.ncd CROSSROAD.ncd CROSSROAD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CROSSROAD.twx CROSSROAD.ncd -o CROSSROAD.twr CROSSROAD.pcf -ucf CROSSROAD.ucf 
+bitgen -intstyle ise -f CROSSROAD.ut CROSSROAD.ncd 

@@ -1,0 +1,38 @@
+
+
+NET "clk" LOC = C9;
+NET "anodes[3]" LOC = E13;
+NET "anodes[2]" LOC = C4;
+NET "anodes[1]" LOC = B11;
+NET "anodes[0]" LOC = A11;
+NET "seg[0]" LOC = A16;
+NET "seg[1]" LOC = D14;
+NET "seg[2]" LOC = C14;
+NET "seg[3]" LOC = B14;
+NET "seg[4]" LOC = A14;
+NET "seg[5]" LOC = B13;
+NET "seg[6]" LOC = A13;
+
+
+
+
+NET "dioda[0]" LOC = F12;
+NET "dioda[1]" LOC = E12;
+NET "dioda[2]" LOC = E11;
+NET "dioda[3]" LOC = F11;
+NET "dioda[4]" LOC = C11;
+NET "dioda[5]" LOC = D11;
+NET "dioda[6]" LOC = E9;
+NET "dioda[7]" LOC = F9;
+
+
+
+NET "dioda1[0]" LOC = A8;
+NET "dioda1[1]" LOC = C3;
+NET "dioda1[2]" LOC = G9;
+
+
+NET "reset" LOC = N17;
+
+# PlanAhead Generated physical constraints 
+

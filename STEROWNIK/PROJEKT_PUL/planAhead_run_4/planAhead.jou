@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon May 16 12:35:35 2016
+# Process ID: 4404
+# Log file: C:/Users/Student/212499/PROJEKT_PUL/planAhead_run_4/planAhead.log
+# Journal file: C:/Users/Student/212499/PROJEKT_PUL/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Student/212499/PROJEKT_PUL/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin C3 [get_ports {dioda1[2]}]
+endgroup
+startgroup
+set_property package_pin A8 [get_ports {dioda1[1]}]
+endgroup
+startgroup
+set_property package_pin G9 [get_ports {dioda1[0]}]
+endgroup
+save_constraints

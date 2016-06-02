@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon May 16 10:26:02 2016
+# Process ID: 4052
+# Log file: C:/Users/Student/212499/PROJEKT_PUL/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/Student/212499/PROJEKT_PUL/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Student/212499/PROJEKT_PUL/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  clk]]
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+set_property package_pin "" [get_ports [list  reset]]
+startgroup
+set_property package_pin E13 [get_ports {anodes[3]}]
+endgroup
+startgroup
+set_property package_pin C4 [get_ports {anodes[2]}]
+endgroup
+startgroup
+set_property package_pin B11 [get_ports {anodes[1]}]
+endgroup
+startgroup
+set_property package_pin A11 [get_ports {anodes[0]}]
+endgroup
+startgroup
+set_property package_pin A16 [get_ports {seg[0]}]
+endgroup
+startgroup
+set_property package_pin D14 [get_ports {seg[1]}]
+endgroup
+startgroup
+set_property package_pin C14 [get_ports {seg[2]}]
+endgroup
+startgroup
+set_property package_pin B14 [get_ports {seg[3]}]
+endgroup
+startgroup
+set_property package_pin A14 [get_ports {seg[4]}]
+endgroup
+startgroup
+set_property package_pin B13 [get_ports {seg[5]}]
+endgroup
+set_property package_pin "" [get_ports [list  {seg[6]}]]
+startgroup
+set_property package_pin A13 [get_ports {seg[6]}]
+endgroup
+save_constraints

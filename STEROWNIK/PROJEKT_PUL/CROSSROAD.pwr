@@ -1,0 +1,979 @@
+--------------------------------------------------------------------
+|                      Xilinx XPower Analyzer                      |
+--------------------------------------------------------------------
+| Release                | 14.7 - P.20131013 (nt64)                |
+| Command Line           | Generated from Graphical User Interface |
+--------------------------------------------------------------------
+
+--------------------------------
+|      Table of Contents       |
+--------------------------------
+| 1.  Settings                 |
+| 1.1.  Project                |
+| 1.2.  Device                 |
+| 1.3.  Environment            |
+| 1.4.  Default Activity Rates |
+| 2.  Summary                  |
+| 2.1.  On-Chip Power Summary  |
+| 2.2.  Thermal Summary        |
+| 2.3.  Power Supply Summary   |
+| 2.4.  Confidence Level       |
+| 3.  Detailed Reports         |
+| 3.1.  By Hierarchy           |
+| 3.2.  By Clock Domain        |
+| 3.3.  By Resource Type       |
+| 3.3.1.  Core Dynamic         |
+| 3.3.1.1.  Logic              |
+| 3.3.1.2.  Signals            |
+| 3.3.2.  IO                   |
+| 4.  Warnings                 |
+--------------------------------
+
+1.  Settings
+1.1.  Project
+---------------------------------------------
+|                  Project                  |
+---------------------------------------------
+| Design File               | CROSSROAD.ncd |
+| Settings File             | NA            |
+| Physical Constraints File | CROSSROAD.pcf |
+| Simulation Activity File  | NA            |
+| Design Nets Matched       | NA            |
+| Simulation Nets Matched   | NA            |
+---------------------------------------------
+
+1.2.  Device
+-----------------------------------------------
+|                   Device                    |
+-----------------------------------------------
+| Family           | Spartan3e                |
+| Part             | xc3s500e                 |
+| Package          | fg320                    |
+| Temp Grade       | Commercial               |
+| Process          | Typical                  |
+| Speed Grade      | -4                       |
+| Characterization | PRODUCTION,v1.2,06-23-09 |
+-----------------------------------------------
+
+1.3.  Environment
+---------------------------
+|       Environment       |
+---------------------------
+| Ambient Temp (C) | 25.0 |
+| Use custom TJA?  | No   |
+| Custom TJA (C/W) | NA   |
+| Airflow (LFM)    | 0    |
+---------------------------
+
+1.4.  Default Activity Rates
+----------------------------------
+|     Default Activity Rates     |
+----------------------------------
+| FF Toggle Rate (%)     | 12.5  |
+| I/O Toggle Rate (%)    | 12.5  |
+| Output Load (pF)       | 5.0   |
+| I/O Enable Rate (%)    | 100.0 |
+| BRAM Write Rate (%)    | 50.0  |
+| BRAM Enable Rate (%)   | 50.0  |
+----------------------------------
+
+2.  Summary
+2.1.  On-Chip Power Summary
+-----------------------------------------------------------------------------
+|                           On-Chip Power Summary                           |
+-----------------------------------------------------------------------------
+|        On-Chip        | Power (mW) |  Used  | Available | Utilization (%) |
+-----------------------------------------------------------------------------
+| Clocks                |       0.00 |      1 |    ---    |       ---       |
+| Logic                 |       0.00 |    177 |      9312 |               2 |
+| Signals               |       0.00 |    203 |    ---    |       ---       |
+| IOs                   |       0.00 |     24 |       232 |              10 |
+| Static Power          |      80.98 |        |           |                 |
+| Total                 |      80.98 |        |           |                 |
+-----------------------------------------------------------------------------
+
+2.2.  Thermal Summary
+------------------------------
+|      Thermal Summary       |
+------------------------------
+| Effective TJA (C/W) | 26.1 |
+| Max Ambient (C)     | 82.9 |
+| Junction Temp (C)   | 27.1 |
+------------------------------
+
+2.3.  Power Supply Summary
+---------------------------------------------------------
+|                 Power Supply Summary                  |
+---------------------------------------------------------
+|                      | Total | Dynamic | Static Power |
+---------------------------------------------------------
+| Supply Power (mW)    | 80.98 | 0.00    | 80.98        |
+---------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------------------
+|                                            Power Supply Currents                                            |
+---------------------------------------------------------------------------------------------------------------
+|     Supply Source     | Supply Voltage | Total Current (mA) | Dynamic Current (mA) | Quiescent Current (mA) |
+---------------------------------------------------------------------------------------------------------------
+| Vccint                |          1.200 |              25.82 |                 0.00 |                  25.82 |
+| Vccaux                |          2.500 |              18.00 |                 0.00 |                  18.00 |
+| Vcco25                |          2.500 |               2.00 |                 0.00 |                   2.00 |
+---------------------------------------------------------------------------------------------------------------
+
+2.4.  Confidence Level
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|                                                                                                    Confidence Level                                                                                                    |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       User Input Data       | Confidence |                        Details                         |                                                       Action                                                       |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Design implementation state | High       | Design is completely routed                            |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3.  Details
+3.1.  By Hierarchy
+-----------------------------------------------------------------------------------------
+|  By Hierarchy   | Power (mW) | Logic Power (mW) | Signal Power (mW) | # FFs  | # LUTs |
+-----------------------------------------------------------------------------------------
+| Hierarchy total |   0.00     |   0.00           |   0.00            |    101 |    169 |
+|   CROSSROAD     |   0.00     |   0.00           |   0.00            |    101 |    169 |
+-----------------------------------------------------------------------------------------
+
+3.2.  By Clock Domain
+----------------------------------------------------------------------------------------------------------------------------------------
+|   By Clock Domain : 1    | Power (mW) | Freq (MHz) |       Buffer        | Buffer Enable (%) | Enable Signal | Fanout | Slice Fanout |
+----------------------------------------------------------------------------------------------------------------------------------------
+| clk_BUFGP/IBUFG          |            |            |                     |                   |               |        |              |
+|  Logic:                  |            |            |                     |                   |               |        |              |
+|   clk_BUFGP/BUFG         |       0.00 |       0.00 | BUFGMUX_GCLK_BUFFER |                NA | NA            |     NA |           NA |
+|   clk_BUFGP/BUFG.GCLKMUX |       0.00 |       0.00 | BUFGMUX_GCLKMUX     |                NA | NA            |     NA |           NA |
+|  Nets:                   |            |            |                     |                   |               |        |              |
+|   clk_BUFGP              |       0.00 |       0.00 | NA                  |                NA | NA            |    101 |           59 |
+|   clk_BUFGP/IBUFG        |       0.00 |       0.00 | NA                  |                NA | NA            |      1 |            1 |
+|                          |            |            |                     |                   |               |        |              |
+| Total                    |       0.00 |            |                     |                   |               |        |              |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+3.3.  By Resource Type
+3.3.1.  Core Dynamic
+3.3.1.1.  Logic
+-----------------------------------------------------------------------------------------------------------------------
+|                    Logic                    | Power (mW) |      Type       | Clock (MHz) | Clock Name | Signal Rate |
+-----------------------------------------------------------------------------------------------------------------------
+| Mcompar_clk_div2s_cmp_ge0000_cy<0>          |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_cy<1>          |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_cy<2>          |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_cy<3>          |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_cy<4>          |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_cy<5>          |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_cy<6>          |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_cy<7>          |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_cy<8>          |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_cy<9>          |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_lut<1>         |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_lut<2>         |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_lut<3>_INV_0   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_lut<5>_INV_0   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_lut<6>         |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div2s_cmp_ge0000_lut<8>_INV_0   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_cy<0>         |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_cy<10>        |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_cy<11>        |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_cy<12>        |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_cy<13>        |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_cy<1>         |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_cy<2>         |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_cy<3>         |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_cy<4>         |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_cy<5>         |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_cy<6>         |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_cy<7>         |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_cy<8>         |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_cy<9>         |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_lut<0>        |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_lut<10>       |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_lut<11>       |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_lut<12>_INV_0 |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_lut<1>_INV_0  |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_lut<3>        |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_lut<4>_INV_0  |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_lut<6>_INV_0  |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_lut<7>        |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcompar_clk_div30s_cmp_ge0000_lut<8>_INV_0  |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<0>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<10>                    |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<11>                    |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<12>                    |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<13>                    |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<14>                    |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<15>                    |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<1>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<2>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<3>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<4>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<5>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<6>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<7>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<8>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_cy<9>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<0>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<10>                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<11>                   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<12>                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<13>                   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<14>                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<15>                   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<1>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<2>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<3>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<4>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<5>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<6>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<7>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<8>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_lut<9>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<0>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<10>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<11>                   |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<12>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<13>                   |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<14>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<15>                   |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<16>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<1>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<2>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<3>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<4>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<5>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<6>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<7>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<8>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div1ms_xor<9>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<0>                      |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<10>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<11>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<12>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<13>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<14>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<15>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<16>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<17>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<18>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<19>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<1>                      |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<20>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<21>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<22>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<23>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<24>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<25>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<2>                      |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<3>                      |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<4>                      |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<5>                      |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<6>                      |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<7>                      |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<8>                      |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_cy<9>                      |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<0>                     |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<10>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<11>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<12>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<13>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<14>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<15>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<16>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<17>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<18>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<19>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<1>                     |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<20>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<21>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<22>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<23>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<24>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<25>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<26>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<2>                     |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<3>                     |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<4>                     |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<5>                     |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<6>                     |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<7>                     |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<8>                     |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_lut<9>                     |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<0>                     |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<10>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<11>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<12>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<13>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<14>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<15>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<16>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<17>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<18>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<19>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<1>                     |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<20>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<21>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<22>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<23>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<24>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<25>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<26>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<2>                     |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<3>                     |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<4>                     |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<5>                     |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<6>                     |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<7>                     |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<8>                     |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div2s_xor<9>                     |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<0>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<10>                    |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<11>                    |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<12>                    |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<13>                    |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<14>                    |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<15>                    |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<16>                    |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<17>                    |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<18>                    |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<19>                    |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<1>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<20>                    |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<21>                    |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<22>                    |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<23>                    |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<24>                    |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<25>                    |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<26>                    |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<27>                    |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<28>                    |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<29>                    |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<2>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<3>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<4>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<5>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<6>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<7>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<8>                     |       0.00 | CYMUXF (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_cy<9>                     |       0.00 | CYMUXG (SLICEL) |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<0>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<10>                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<11>                   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<12>                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<13>                   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<14>                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<15>                   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<16>                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<17>                   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<18>                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<19>                   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<1>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<20>                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<21>                   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<22>                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<23>                   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<24>                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<25>                   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<26>                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<27>                   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<28>                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<29>                   |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<2>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<30>                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<3>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<4>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<5>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<6>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<7>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<8>                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_lut<9>                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<0>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<10>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<11>                   |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<12>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<13>                   |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<14>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<15>                   |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<16>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<17>                   |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<18>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<19>                   |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<1>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<20>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<21>                   |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<22>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<23>                   |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<24>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<25>                   |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<26>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<27>                   |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<28>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<29>                   |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<2>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<30>                   |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<3>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<4>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<5>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<6>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<7>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<8>                    |       0.00 | XORF (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_clk_div30s_xor<9>                    |       0.00 | XORG (SLICEL)   |       Async | Async      |         0.0 |
+| Mcount_cnt1_xor<0>11                        |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_cnt1_xor<1>11                        |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_cnt1_xor<2>11                        |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_cnt2_xor<0>11                        |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_cnt2_xor<1>11                        |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_cnt2_xor<2>12                        |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_cnt2_xor<3>111                       |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_cnt2_xor<3>112                       |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_cnt2_xor<3>11_f5                     |       0.00 | F5MUX (SLICEL)  |       Async | Async      |         0.0 |
+| Mcount_cnt3_xor<0>11                        |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_cnt3_xor<1>11                        |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mcount_sel_xor<1>11                         |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mdecod_anodes_mux000001                     |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mdecod_anodes_mux000011                     |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mdecod_anodes_mux000021                     |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mdecod_anodes_mux000031                     |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mmux_digit2109                              |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mmux_digit211                               |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mmux_digit2115                              |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mmux_digit2121                              |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mmux_digit274                               |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mmux_digit28                                |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mmux_digit5                                 |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mmux_digit5_SW0                             |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mmux_digit5_SW1                             |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mmux_digit_2_f5                             |       0.00 | F5MUX (SLICEL)  |       Async | Async      |         0.0 |
+| Mmux_digit_2_f5_0                           |       0.00 | F5MUX (SLICEL)  |       Async | Async      |         0.0 |
+| Mmux_digit_3                                |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mmux_digit_31                               |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mmux_digit_4                                |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mmux_digit_41                               |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mrom_seg_mux000111                          |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mrom_seg_mux0001211                         |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mrom_seg_mux000131                          |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mrom_seg_mux000141                          |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| Mrom_seg_mux000151                          |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| Mrom_seg_mux0001611                         |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| ProtoComp45.C2VDD                           |       0.00 | C2VDD (SLICEL)  |       Async | Async      |         0.0 |
+| ProtoComp45.GNDF                            |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp46.C2VDD                           |       0.00 | C2VDD (SLICEL)  |       Async | Async      |         0.0 |
+| ProtoComp46.GNDF                            |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp47.C1VDD                           |       0.00 | C1VDD (SLICEL)  |       Async | Async      |         0.0 |
+| ProtoComp47.C1VDD.1                         |       0.00 | C1VDD (SLICEL)  |       Async | Async      |         0.0 |
+| ProtoComp47.C1VDD.2                         |       0.00 | C1VDD (SLICEL)  |       Async | Async      |         0.0 |
+| ProtoComp47.C1VDD.3                         |       0.00 | C1VDD (SLICEL)  |       Async | Async      |         0.0 |
+| ProtoComp47.GNDG                            |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp47.GNDG.1                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp47.GNDG.2                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp47.GNDG.3                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp48.C1VDD                           |       0.00 | C1VDD (SLICEL)  |       Async | Async      |         0.0 |
+| ProtoComp48.GNDG                            |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp49.C1VDD                           |       0.00 | C1VDD (SLICEL)  |       Async | Async      |         0.0 |
+| ProtoComp49.GNDG                            |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp50.GNDF                            |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp50.GNDF.1                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp50.GNDG                            |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp50.GNDG.1                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF                            |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.1                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.10                         |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.11                         |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.12                         |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.13                         |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.14                         |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.15                         |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.16                         |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.17                         |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.18                         |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.19                         |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.2                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.20                         |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.21                         |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.3                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.4                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.5                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.6                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.7                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.8                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDF.9                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG                            |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.1                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.10                         |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.11                         |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.12                         |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.13                         |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.14                         |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.15                         |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.16                         |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.17                         |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.18                         |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.19                         |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.2                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.20                         |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.21                         |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.3                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.4                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.5                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.6                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.7                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.8                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp51.GNDG.9                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp52.GNDF                            |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp52.GNDF.1                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp52.GNDG                            |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp52.GNDG.1                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp54.C2VDD                           |       0.00 | C2VDD (SLICEL)  |       Async | Async      |         0.0 |
+| ProtoComp54.GNDF                            |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp55.C2VDD                           |       0.00 | C2VDD (SLICEL)  |       Async | Async      |         0.0 |
+| ProtoComp55.GNDF                            |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp56.C2VDD                           |       0.00 | C2VDD (SLICEL)  |       Async | Async      |         0.0 |
+| ProtoComp56.GNDF                            |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp57.GNDF                            |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp57.GNDG                            |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDF                            |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDF.1                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDF.2                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDF.3                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDF.4                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDF.5                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDF.6                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDF.7                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDF.8                          |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDG                            |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDG.1                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDG.2                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDG.3                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDG.4                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDG.5                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDG.6                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDG.7                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp58.GNDG.8                          |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp59.GNDF                            |       0.00 | GNDF (SLICEL)   |       Async | Async      |         0.0 |
+| ProtoComp59.GNDG                            |       0.00 | GNDG (SLICEL)   |       Async | Async      |         0.0 |
+| STAN_FSM_FFd1                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| STAN_FSM_FFd1-In1                           |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| STAN_FSM_FFd1-In2                           |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| STAN_FSM_FFd1-In_f5                         |       0.00 | F5MUX (SLICEL)  |       Async | Async      |         0.0 |
+| STAN_FSM_FFd2                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| STAN_FSM_FFd2-In12                          |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| STAN_FSM_FFd2-In21                          |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| STAN_FSM_FFd2-In24                          |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| STAN_FSM_FFd2-In62                          |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| STAN_FSM_FFd2-In77                          |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| STAN_FSM_FFd3                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| STAN_FSM_FFd3-In23                          |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| STAN_FSM_FFd3-In23_SW0                      |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| STAN_FSM_FFd3-In41                          |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| clk_div1ms_0                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_1                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_10                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_11                               |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_12                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_13                               |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_14                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_15                               |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_16                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_2                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_3                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_4                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_5                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_6                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_7                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_8                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div1ms_9                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_0                                 |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_1                                 |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_10                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_11                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_12                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_13                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_14                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_15                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_16                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_17                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_18                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_19                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_2                                 |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_20                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_21                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_22                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_23                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_24                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_25                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_26                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_3                                 |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_4                                 |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_5                                 |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_6                                 |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_7                                 |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_8                                 |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div2s_9                                 |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_0                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_1                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_10                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_11                               |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_12                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_13                               |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_14                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_15                               |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_16                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_17                               |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_18                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_19                               |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_2                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_20                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_21                               |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_22                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_23                               |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_24                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_25                               |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_26                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_27                               |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_28                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_29                               |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_3                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_30                               |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_4                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_5                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_6                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_7                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_8                                |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| clk_div30s_9                                |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| cnt1_0                                      |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| cnt1_1                                      |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| cnt1_2                                      |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| cnt1_and00001                               |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| cnt2_0                                      |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| cnt2_1                                      |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| cnt2_2                                      |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| cnt2_3                                      |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| cnt3_0                                      |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| cnt3_1                                      |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| cnt4                                        |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| daylight_0                                  |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| daylight_1                                  |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| daylight_2                                  |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| daylight_and00011                           |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| daylight_mux0002<0>1                        |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| daylight_mux0002<1>1                        |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| daylight_mux0002<2>1                        |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| dioda<1>31                                  |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| dioda<1>57_SW0                              |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| dioda<1>931                                 |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| dioda<1>93_f5                               |       0.00 | F5MUX (SLICEL)  |       Async | Async      |         0.0 |
+| dioda<1>961                                 |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| dioda<1>962                                 |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| dioda<1>96_f5                               |       0.00 | F5MUX (SLICEL)  |       Async | Async      |         0.0 |
+| dioda<4>210                                 |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| dioda<4>211                                 |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| dioda<4>42                                  |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| dioda<4>87                                  |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| dioda<4>87_SW0                              |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| dioda<4>97                                  |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| dioda<7>                                    |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| dioda<7>_SW0                                |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| dzien                                       |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| dzien_and0000                               |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| dzien_and0000_SW0                           |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| seg_0                                       |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| seg_1                                       |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| seg_2                                       |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| seg_3                                       |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| seg_4                                       |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| seg_5                                       |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| seg_6                                       |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| sel_0                                       |       0.00 | FFY (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| sel_1                                       |       0.00 | FFX (SLICEL)    |         0.0 | clk_BUFGP  |         0.0 |
+| sel_and00001                                |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| test1<0>1                                   |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| test1<1>70                                  |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| test1<1>70_SW0                              |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| test1<1>70_SW1                              |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| test1<2>                                    |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| test1<2>11                                  |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| test1<2>_SW0                                |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| x<0>1                                       |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| x<12>1                                      |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| x<13>1                                      |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| x<15>1                                      |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| x<1>1                                       |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+| x<4>1                                       |       0.00 | G (SLICEL)      |       Async | Async      |         0.0 |
+| x<5>1                                       |       0.00 | F (SLICEL)      |       Async | Async      |         0.0 |
+|                                             |            |                 |             |            |             |
+| Total                                       |       0.00 |                 |             |            |             |
+-----------------------------------------------------------------------------------------------------------------------
+
+3.3.1.2.  Signals
+---------------------------------------------------------------------------------------------------------------------------------------------
+|               Signals                | Power (mW) | Signal Rate | % High | Fanout | Slice Fanout |   Clock   |         Logic Type         |
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Mcompar_clk_div2s_cmp_ge0000_cy<1>   |       0.00 |        0.00 |   64.1 |      1 |            1 | Async     | NA                         |
+| Mcompar_clk_div2s_cmp_ge0000_cy<3>   |       0.00 |        0.00 |   79.9 |      1 |            1 | Async     | NA                         |
+| Mcompar_clk_div2s_cmp_ge0000_cy<5>   |       0.00 |        0.00 |   71.7 |      1 |            1 | Async     | NA                         |
+| Mcompar_clk_div2s_cmp_ge0000_cy<7>   |       0.00 |        0.00 |   29.3 |      1 |            1 | Async     | NA                         |
+| Mcompar_clk_div30s_cmp_ge0000_cy<11> |       0.00 |        0.00 |   53.7 |      1 |            1 | Async     | NA                         |
+| Mcompar_clk_div30s_cmp_ge0000_cy<1>  |       0.00 |        0.00 |   97.6 |      1 |            1 | Async     | NA                         |
+| Mcompar_clk_div30s_cmp_ge0000_cy<3>  |       0.00 |        0.00 |   36.1 |      1 |            1 | Async     | NA                         |
+| Mcompar_clk_div30s_cmp_ge0000_cy<5>  |       0.00 |        0.00 |   46.7 |      1 |            1 | Async     | NA                         |
+| Mcompar_clk_div30s_cmp_ge0000_cy<7>  |       0.00 |        0.00 |   64.4 |      1 |            1 | Async     | NA                         |
+| Mcompar_clk_div30s_cmp_ge0000_cy<9>  |       0.00 |        0.00 |   46.8 |      1 |            1 | Async     | NA                         |
+| Mcount_clk_div1ms_cy<11>             |       0.00 |        0.00 |    0.0 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div1ms_cy<13>             |       0.00 |        0.00 |    0.0 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div1ms_cy<15>             |       0.00 |        0.00 |    0.0 |      1 |            1 | Async     | NA                         |
+| Mcount_clk_div1ms_cy<1>              |       0.00 |        0.00 |    0.2 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div1ms_cy<3>              |       0.00 |        0.00 |    0.1 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div1ms_cy<5>              |       0.00 |        0.00 |    0.1 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div1ms_cy<7>              |       0.00 |        0.00 |    0.0 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div1ms_cy<9>              |       0.00 |        0.00 |    0.0 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div2s_cy<11>              |       0.00 |        0.00 |    4.9 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div2s_cy<13>              |       0.00 |        0.00 |    2.8 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div2s_cy<15>              |       0.00 |        0.00 |    1.6 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div2s_cy<17>              |       0.00 |        0.00 |    1.0 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div2s_cy<19>              |       0.00 |        0.00 |    0.6 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div2s_cy<1>               |       0.00 |        0.00 |    9.8 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div2s_cy<21>              |       0.00 |        0.00 |    0.3 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div2s_cy<23>              |       0.00 |        0.00 |    0.2 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div2s_cy<25>              |       0.00 |        0.00 |    0.1 |      1 |            1 | Async     | NA                         |
+| Mcount_clk_div2s_cy<3>               |       0.00 |        0.00 |   15.6 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div2s_cy<5>               |       0.00 |        0.00 |   15.6 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div2s_cy<7>               |       0.00 |        0.00 |   15.6 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div2s_cy<9>               |       0.00 |        0.00 |    8.7 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<11>             |       0.00 |        0.00 |    4.9 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<13>             |       0.00 |        0.00 |    2.8 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<15>             |       0.00 |        0.00 |    1.6 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<17>             |       0.00 |        0.00 |    1.0 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<19>             |       0.00 |        0.00 |    0.6 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<1>              |       0.00 |        0.00 |    9.8 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<21>             |       0.00 |        0.00 |    0.3 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<23>             |       0.00 |        0.00 |    0.2 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<25>             |       0.00 |        0.00 |    0.1 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<27>             |       0.00 |        0.00 |    0.1 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<29>             |       0.00 |        0.00 |    0.0 |      1 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<3>              |       0.00 |        0.00 |   15.6 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<5>              |       0.00 |        0.00 |   15.6 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<7>              |       0.00 |        0.00 |   15.6 |      2 |            1 | Async     | NA                         |
+| Mcount_clk_div30s_cy<9>              |       0.00 |        0.00 |    8.7 |      2 |            1 | Async     | NA                         |
+| Mmux_digit2109/O                     |       0.00 |        0.00 |   73.3 |      1 |            1 | Async     | NA                         |
+| Mmux_digit2115                       |       0.00 |        0.00 |    0.0 |      1 |            1 | Async     | NA                         |
+| Mmux_digit274                        |       0.00 |        0.00 |   25.0 |      1 |            1 | Async     | NA                         |
+| Mmux_digit28/O                       |       0.00 |        0.00 |    5.9 |      1 |            1 | Async     | NA                         |
+| Mmux_digit5_SW0/O                    |       0.00 |        0.00 |   50.0 |      1 |            1 | Async     | NA                         |
+| N0                                   |       0.00 |        0.00 |   23.3 |      5 |            5 | Async     | NA                         |
+| N11                                  |       0.00 |        0.00 |   50.0 |      6 |            6 | Async     | NA                         |
+| N17                                  |       0.00 |        0.00 |   62.8 |      4 |            4 | Async     | NA                         |
+| N19                                  |       0.00 |        0.00 |   87.5 |      3 |            3 | Async     | NA                         |
+| N2                                   |       0.00 |        0.00 |   88.0 |      2 |            2 | Async     | NA                         |
+| N39                                  |       0.00 |        0.00 |   76.5 |      1 |            1 | Async     | NA                         |
+| N41                                  |       0.00 |        0.00 |   74.8 |      1 |            1 | Async     | NA                         |
+| N43                                  |       0.00 |        0.00 |   81.3 |      1 |            1 | Async     | NA                         |
+| N46                                  |       0.00 |        0.00 |   50.0 |      1 |            1 | Async     | NA                         |
+| N48                                  |       0.00 |        0.00 |    0.0 |      1 |            1 | Async     | NA                         |
+| N50                                  |       0.00 |        0.00 |   59.9 |      1 |            1 | Async     | NA                         |
+| N52                                  |       0.00 |        0.00 |    6.6 |      1 |            1 | Async     | NA                         |
+| N54                                  |       0.00 |        0.00 |   62.0 |      1 |            1 | Async     | NA                         |
+| N56                                  |       0.00 |        0.00 |   23.2 |      1 |            1 | Async     | NA                         |
+| STAN_FSM_FFd1                        |       0.00 |        0.00 |    0.0 |     25 |           25 | clk_BUFGP | NA                         |
+| STAN_FSM_FFd2                        |       0.00 |        0.00 |   53.3 |     23 |           23 | clk_BUFGP | NA                         |
+| STAN_FSM_FFd2-In12                   |       0.00 |        0.00 |   26.7 |      1 |            1 | Async     | NA                         |
+| STAN_FSM_FFd2-In21                   |       0.00 |        0.00 |    0.0 |      1 |            1 | Async     | NA                         |
+| STAN_FSM_FFd2-In24/O                 |       0.00 |        0.00 |    0.2 |      1 |            1 | Async     | NA                         |
+| STAN_FSM_FFd2-In62                   |       0.00 |        0.00 |   76.0 |      1 |            1 | Async     | NA                         |
+| STAN_FSM_FFd3                        |       0.00 |        0.00 |   50.0 |     25 |           25 | clk_BUFGP | NA                         |
+| STAN_FSM_FFd3-In23                   |       0.00 |        0.00 |   50.0 |      1 |            1 | Async     | NA                         |
+| anodes_0_OBUF                        |       0.00 |        0.00 |   25.0 |      1 |            1 | Async     | NA                         |
+| anodes_1_OBUF                        |       0.00 |        0.00 |   25.0 |      1 |            1 | Async     | NA                         |
+| anodes_2_OBUF                        |       0.00 |        0.00 |   25.0 |      1 |            1 | Async     | NA                         |
+| anodes_3_OBUF                        |       0.00 |        0.00 |   25.0 |      1 |            1 | Async     | NA                         |
+| clk_div1ms<0>                        |       0.00 |        0.00 |   49.8 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<10>                       |       0.00 |        0.00 |   25.0 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<11>                       |       0.00 |        0.00 |   25.0 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<12>                       |       0.00 |        0.00 |   25.0 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<13>                       |       0.00 |        0.00 |   25.0 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<14>                       |       0.00 |        0.00 |   25.0 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<15>                       |       0.00 |        0.00 |   25.0 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<16>                       |       0.00 |        0.00 |    0.5 |     19 |           18 | clk_BUFGP | NA                         |
+| clk_div1ms<1>                        |       0.00 |        0.00 |   25.1 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<2>                        |       0.00 |        0.00 |   25.1 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<3>                        |       0.00 |        0.00 |   25.1 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<4>                        |       0.00 |        0.00 |   25.1 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<5>                        |       0.00 |        0.00 |   25.0 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<6>                        |       0.00 |        0.00 |   25.0 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<7>                        |       0.00 |        0.00 |   25.0 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<8>                        |       0.00 |        0.00 |   25.0 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div1ms<9>                        |       0.00 |        0.00 |   25.0 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div2s<0>                         |       0.00 |        0.00 |   44.3 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div2s<10>                        |       0.00 |        0.00 |   39.7 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<11>                        |       0.00 |        0.00 |   39.1 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<12>                        |       0.00 |        0.00 |   38.7 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<13>                        |       0.00 |        0.00 |   38.4 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<14>                        |       0.00 |        0.00 |   38.2 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<15>                        |       0.00 |        0.00 |   38.0 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<16>                        |       0.00 |        0.00 |   37.9 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<17>                        |       0.00 |        0.00 |   37.8 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<18>                        |       0.00 |        0.00 |   37.7 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<19>                        |       0.00 |        0.00 |   37.7 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<1>                         |       0.00 |        0.00 |   39.0 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div2s<20>                        |       0.00 |        0.00 |   37.6 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<21>                        |       0.00 |        0.00 |   37.6 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<22>                        |       0.00 |        0.00 |   37.6 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<23>                        |       0.00 |        0.00 |   37.6 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<24>                        |       0.00 |        0.00 |   37.5 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<25>                        |       0.00 |        0.00 |   37.5 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<26>                        |       0.00 |        0.00 |   50.0 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<2>                         |       0.00 |        0.00 |   39.9 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div2s<3>                         |       0.00 |        0.00 |   41.4 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div2s<4>                         |       0.00 |        0.00 |   41.4 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div2s<5>                         |       0.00 |        0.00 |   41.4 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div2s<6>                         |       0.00 |        0.00 |   41.4 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div2s<7>                         |       0.00 |        0.00 |   41.4 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div2s<8>                         |       0.00 |        0.00 |   41.4 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s<9>                         |       0.00 |        0.00 |   40.4 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div2s_cmp_ge0000                 |       0.00 |        0.00 |   37.5 |     30 |           29 | Async     | NA                         |
+| clk_div30s<0>                        |       0.00 |        0.00 |   44.3 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div30s<10>                       |       0.00 |        0.00 |   39.7 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<11>                       |       0.00 |        0.00 |   39.1 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<12>                       |       0.00 |        0.00 |   38.7 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<13>                       |       0.00 |        0.00 |   38.4 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<14>                       |       0.00 |        0.00 |   38.2 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<15>                       |       0.00 |        0.00 |   38.0 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<16>                       |       0.00 |        0.00 |   37.9 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<17>                       |       0.00 |        0.00 |   37.8 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<18>                       |       0.00 |        0.00 |   37.7 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<19>                       |       0.00 |        0.00 |   37.7 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<1>                        |       0.00 |        0.00 |   39.0 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div30s<20>                       |       0.00 |        0.00 |   37.6 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<21>                       |       0.00 |        0.00 |   37.6 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<22>                       |       0.00 |        0.00 |   37.6 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<23>                       |       0.00 |        0.00 |   37.6 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<24>                       |       0.00 |        0.00 |   37.5 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<25>                       |       0.00 |        0.00 |   37.5 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<26>                       |       0.00 |        0.00 |   37.5 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<27>                       |       0.00 |        0.00 |   37.5 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<28>                       |       0.00 |        0.00 |   37.5 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<29>                       |       0.00 |        0.00 |   37.5 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<2>                        |       0.00 |        0.00 |   39.9 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div30s<30>                       |       0.00 |        0.00 |   50.0 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<3>                        |       0.00 |        0.00 |   41.4 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div30s<4>                        |       0.00 |        0.00 |   41.4 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div30s<5>                        |       0.00 |        0.00 |   41.4 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div30s<6>                        |       0.00 |        0.00 |   41.4 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div30s<7>                        |       0.00 |        0.00 |   41.4 |      1 |            1 | clk_BUFGP | NA                         |
+| clk_div30s<8>                        |       0.00 |        0.00 |   41.4 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s<9>                        |       0.00 |        0.00 |   40.4 |      2 |            2 | clk_BUFGP | NA                         |
+| clk_div30s_cmp_ge0000                |       0.00 |        0.00 |   37.5 |     35 |           34 | Async     | NA                         |
+| cnt1<0>                              |       0.00 |        0.00 |   40.0 |     15 |           15 | clk_BUFGP | NA                         |
+| cnt1<1>                              |       0.00 |        0.00 |   12.5 |     16 |           16 | clk_BUFGP | NA                         |
+| cnt1<2>                              |       0.00 |        0.00 |   12.5 |     16 |           16 | clk_BUFGP | NA                         |
+| cnt1_and0000                         |       0.00 |        0.00 |   37.1 |     10 |            8 | clk_BUFGP | FFX (SLICEL), FFY (SLICEL) |
+| cnt2<0>                              |       0.00 |        0.00 |   17.2 |      6 |            6 | clk_BUFGP | NA                         |
+| cnt2<1>                              |       0.00 |        0.00 |    9.4 |      5 |            5 | clk_BUFGP | NA                         |
+| cnt2<2>                              |       0.00 |        0.00 |    9.4 |      4 |            4 | clk_BUFGP | NA                         |
+| cnt2<3>                              |       0.00 |        0.00 |    0.0 |      3 |            3 | clk_BUFGP | NA                         |
+| cnt3<0>                              |       0.00 |        0.00 |   20.3 |      2 |            2 | clk_BUFGP | NA                         |
+| cnt3<1>                              |       0.00 |        0.00 |   20.3 |      5 |            5 | clk_BUFGP | NA                         |
+| cnt4                                 |       0.00 |        0.00 |   50.0 |      7 |            7 | clk_BUFGP | NA                         |
+| daylight<0>                          |       0.00 |        0.00 |   60.9 |      3 |            3 | clk_BUFGP | NA                         |
+| daylight<1>                          |       0.00 |        0.00 |   18.8 |      4 |            4 | clk_BUFGP | NA                         |
+| daylight<2>                          |       0.00 |        0.00 |   18.8 |      4 |            4 | clk_BUFGP | NA                         |
+| daylight_and0001                     |       0.00 |        0.00 |   37.1 |      3 |            2 | clk_BUFGP | FFX (SLICEL), FFY (SLICEL) |
+| digit<0>                             |       0.00 |        0.00 |    0.0 |      6 |            6 | Async     | NA                         |
+| digit<1>                             |       0.00 |        0.00 |    0.0 |      5 |            5 | Async     | NA                         |
+| digit<2>                             |       0.00 |        0.00 |   14.7 |      6 |            5 | Async     | NA                         |
+| digit<3>                             |       0.00 |        0.00 |   50.0 |      7 |            7 | Async     | NA                         |
+| dioda1_0_OBUF                        |       0.00 |        0.00 |   53.3 |      1 |            1 | Async     | NA                         |
+| dioda1_1_OBUF                        |       0.00 |        0.00 |   38.4 |      1 |            1 | Async     | NA                         |
+| dioda1_2_OBUF                        |       0.00 |        0.00 |   38.3 |      1 |            1 | Async     | NA                         |
+| dioda<1>93                           |       0.00 |        0.00 |    0.0 |      2 |            2 | Async     | NA                         |
+| dioda<4>21                           |       0.00 |        0.00 |   24.8 |      1 |            1 | Async     | NA                         |
+| dioda<4>42                           |       0.00 |        0.00 |   62.8 |      1 |            1 | Async     | NA                         |
+| dioda<4>87                           |       0.00 |        0.00 |    0.0 |      1 |            1 | Async     | NA                         |
+| dioda_1_OBUF                         |       0.00 |        0.00 |    0.0 |      2 |            2 | Async     | NA                         |
+| dioda_4_OBUF                         |       0.00 |        0.00 |   38.4 |      2 |            2 | Async     | NA                         |
+| dioda_7_OBUF                         |       0.00 |        0.00 |   11.7 |      2 |            2 | Async     | NA                         |
+| dzien                                |       0.00 |        0.00 |   50.0 |     12 |           12 | clk_BUFGP | NA                         |
+| dzien_and0000                        |       0.00 |        0.00 |   18.6 |      1 |            1 | clk_BUFGP | FFY (SLICEL)               |
+| reset_IBUF                           |       0.00 |        0.00 |    1.0 |     82 |           46 | Async     | NA                         |
+| seg_0                                |       0.00 |        0.00 |   50.0 |      1 |            1 | clk_BUFGP | NA                         |
+| seg_1                                |       0.00 |        0.00 |   14.7 |      1 |            1 | clk_BUFGP | NA                         |
+| seg_2                                |       0.00 |        0.00 |    0.0 |      1 |            1 | clk_BUFGP | NA                         |
+| seg_3                                |       0.00 |        0.00 |   50.0 |      1 |            1 | clk_BUFGP | NA                         |
+| seg_4                                |       0.00 |        0.00 |   50.0 |      1 |            1 | clk_BUFGP | NA                         |
+| seg_5                                |       0.00 |        0.00 |   50.0 |      1 |            1 | clk_BUFGP | NA                         |
+| seg_6                                |       0.00 |        0.00 |   50.0 |      1 |            1 | clk_BUFGP | NA                         |
+| sel<0>                               |       0.00 |        0.00 |   50.0 |     15 |           15 | clk_BUFGP | NA                         |
+| sel<1>                               |       0.00 |        0.00 |   50.0 |     11 |           11 | clk_BUFGP | NA                         |
+| sel_and0000                          |       0.00 |        0.00 |    0.5 |      2 |            1 | clk_BUFGP | FFX (SLICEL), FFY (SLICEL) |
+| x<0>                                 |       0.00 |        0.00 |    3.0 |      1 |            1 | Async     | NA                         |
+| x<12>                                |       0.00 |        0.00 |   48.3 |      1 |            1 | Async     | NA                         |
+| x<13>                                |       0.00 |        0.00 |   26.7 |      1 |            1 | Async     | NA                         |
+| x<15>                                |       0.00 |        0.00 |   25.0 |      1 |            1 | Async     | NA                         |
+| x<1>                                 |       0.00 |        0.00 |   44.5 |      1 |            1 | Async     | NA                         |
+| x<4>                                 |       0.00 |        0.00 |   56.4 |      1 |            1 | Async     | NA                         |
+| x<5>                                 |       0.00 |        0.00 |   43.6 |      1 |            1 | Async     | NA                         |
+|                                      |            |             |        |        |              |           |                            |
+| Total                                |       0.00 |             |        |        |              |           |                            |
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+3.3.2.  IO
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|         IO         | Power (mW) |   I/O Standard   | Signal Rate | % High | Clock (MHz) | Clock Name | Input Pins | Output Pins | Bidir Pins | Output Enable (%) | Output Load (pF) | Data Rate | IO LOGIC SERDES | IO DELAY | IBUF LOW PWR | Vccint (mW) | Vccaux (mW) | Vcco On-Chip Termal (mW)  | Vcco Supply Current (mA) |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| anodes<0>          |       0.00 | LVCMOS25_12_SLOW |        0.00 |   25.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| anodes<1>          |       0.00 | LVCMOS25_12_SLOW |        0.00 |   25.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| anodes<2>          |       0.00 | LVCMOS25_12_SLOW |        0.00 |   25.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| anodes<3>          |       0.00 | LVCMOS25_12_SLOW |        0.00 |   25.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| clk                |       0.00 | LVCMOS25         |        0.00 |   50.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| dioda1<0>          |       0.00 | LVCMOS25_12_SLOW |        0.00 |   53.3 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| dioda1<1>          |       0.00 | LVCMOS25_12_SLOW |        0.00 |   38.4 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| dioda1<2>          |       0.00 | LVCMOS25_12_SLOW |        0.00 |   38.3 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| dioda<0>           |       0.00 | LVCMOS25_12_SLOW |        0.00 |    0.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| dioda<1>           |       0.00 | LVCMOS25_12_SLOW |        0.00 |    0.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| dioda<2>           |       0.00 | LVCMOS25_12_SLOW |        0.00 |    0.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| dioda<3>           |       0.00 | LVCMOS25_12_SLOW |        0.00 |   38.4 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| dioda<4>           |       0.00 | LVCMOS25_12_SLOW |        0.00 |   38.4 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| dioda<5>           |       0.00 | LVCMOS25_12_SLOW |        0.00 |    0.0 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| dioda<6>           |       0.00 | LVCMOS25_12_SLOW |        0.00 |   11.7 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| dioda<7>.PAD       |       0.00 | LVCMOS25_12_SLOW |        0.00 |   11.7 |       Async | Async      |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| reset              |       0.00 | LVCMOS25         |        0.00 |    1.0 |       Async | Async      |          1 |           0 |          0 |                NA |                0 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| seg<0>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |        0.00 | clk_BUFGP  |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| seg<1>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   14.7 |        0.00 | clk_BUFGP  |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| seg<2>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |    0.0 |        0.00 | clk_BUFGP  |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| seg<3>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |        0.00 | clk_BUFGP  |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| seg<4>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |        0.00 | clk_BUFGP  |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| seg<5>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |        0.00 | clk_BUFGP  |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+| seg<6>             |       0.00 | LVCMOS25_12_SLOW |        0.00 |   50.0 |        0.00 | clk_BUFGP  |          0 |           1 |          0 |                NA |                5 | SDR       | No              | Off      | No           |        0.00 |        0.00 |                      0.00 |                     0.00 |
+|                    |            |                  |             |        |             |            |            |             |            |                   |                  |           |                 |          |              |             |             |                           |                          |
+| Internal VREFs (0) |       0.00 |                  |             |        |             |            |            |             |            |                   |                  |           |                 |          |              |             |             |                           |                          |
+|                    |            |                  |             |        |             |            |            |             |            |                   |                  |           |                 |          |              |             |             |                           |                          |
+| Total              |       0.00 |                  |             |        |             |            |            |             |            |                   |                  |           |                 |          |              |             |             |                           |                          |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4.  Warnings
+--------------------------------------------------------------------------------
+WARNING:Power:1337 - Clock frequency for clock net "clk_BUFGP" is zero.
+WARNING:Power:1337 - Clock frequency for clock net "clk_BUFGP/IBUFG" is zero.
+WARNING:Power:1369 - Clock frequency for one or more clocks was not found through
+timing constraints (PCF file) or simulation data.  Without knowing the
+clock frequency of all clocks, dynamic power information for those clock
+domains will default to zero which may under-estimate the power for this
+design.  To avoid this warning, provide at least one of the following:
+  1. The proper timing constraints (PERIOD) for clocks (re-implement design
+     and load the newly generated PCF file into XPower Analyzer)
+  2. A post PAR simulation-generated VCD or SAIF file indicating clock
+     frequencies
+  3. The clock frequency for clocks in the "By Type -> Clocks" view in the
+     XPower Analyzer GUI and then applying "Update Power Analysis"
+--------------------------------------------------------------------------------
+
+Analysis completed: Mon May 30 12:14:33 2016
+----------------------------------------------------------------
